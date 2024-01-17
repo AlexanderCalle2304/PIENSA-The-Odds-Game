@@ -1,0 +1,128 @@
+body{
+  background-color: #4EF08F;
+  font-family: jetbrains mono, sans-serif;
+  padding: 20px 17px 60px 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+h1{
+  text-align: center;
+  font-size: 36px;
+  color: #003317;
+}
+
+.login-wrapper{
+  background-color: #D8FFE7;
+  display: inline-flex;
+  padding: 70px 20px;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 60px;
+}
+.login-user{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: #0D5A2F;
+  text-align: center;
+  font-size: 14px;
+  font-family: jetbrains mono, sans-serif;
+  font-weight: 700;
+}
+
+#user{
+  width: 286px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 0px 25px;
+ background: #EFFEF4;
+ box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ border: none;
+ text-align: center;
+}
+.login-passw{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: #0D5A2F;
+  text-align: center;
+  font-size: 14px;
+  font-family: jetbrains mono, sans-serif;
+  font-weight: 700;
+}
+
+#passw{
+  width: 286px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 0px 25px;
+ background: #EFFEF4;
+ box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ border: none;
+ text-align: center;
+}
+
+#login{
+  width: 181px;
+  height: 45px;
+  border-radius: 25px;
+  background: #10D760;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: #D8FFE7;
+  text-align: center;
+  font-family: JetBrains Mono;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p {
+  color: #000;
+  text-align: center;
+  font-family: JetBrains Mono;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#register{
+  border-radius: 25px;
+  background: #10D760;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 181px;
+  height: 45px;
+  border: none;
+  color: #D8FFE7;
+  text-align: center;
+  font-family: JetBrains Mono;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  gap: 15px;
+}
+#login:hover{
+  color: #003317;
+  cursor: pointer;
+}
+#register:hover{
+  color: #003317;
+  cursor: pointer;
+}
+
+
