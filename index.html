@@ -3,92 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Styles/level-selector.css" />
-    <title>The Odds Game</title>
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <title>Odds Game</title>
   </head>
   <body>
-    <main>
-      <header class="main-header">
-        <h3>The Odds Game</h3>
-        <button id="sett-btn">Settings</button>
-      </header>
-      <section class="level-wrapper">
-        <div class="level-selector">
-          <div class="level-prev">
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-          </div>
-          <div class="level-title">
-          <h3 class="level-num">Level 1</h3>
-        </div>
-          <a href="Levels/level01.html">
-            <button class="play">Play</button>
-          </a>
-        </div>
-        <hr />
-        <div class="level-selector">
-          <div class="level-prev">
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-          </div>
-          <div class="level-title">
-          <h3 class="level-num">Level 2</h3>
-        </div>
-          <a href="Levels/level02.html">
-            <button class="play">Play</button>
-          </a>
-        </div>
-        <hr />
-        <div class="level-selector">
-          <div class="level-prev">
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-          </div>
-          <div class="level-title">
-          <h3 class="level-num">Level 3</h3>
-        </div>
-          <button class="play">Play</button>
-        </div>
-        <hr />
-        <div class="level-selector">
-          <div class="level-prev">
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-            <div class="prev"></div>
-          </div>
-          <div class="level-title">
-          <h3 class="level-num">Level 4</h3>
-        </div>
-          <button class="play">Play</button>
-        </div>
-      </section>
+    <header class="title">
+      <h1>The Odds Game</h1>
+    </header>
+    <main class="login-wrapper">
+      <div class="login-user">
+        <label for="">Usuario</label>
+        <input
+          type="text"
+          placeholder="Escriba su Usuario"
+          id="user"
+          required
+        />
+      </div>
+      <div class="login-passw">
+        <label for="">Contraseña</label>
+        <input
+          type="password"
+          placeholder="Escriba su Contraseña"
+          id="passw"
+          required
+        />
+      </div>
+      <div class="login-btn">
+        <a href="level-selector.html">
+          <button id="login">Ingresar</button>
+        </a>
+      </div>
+      <div class="login-register">
+        <p>¿No tienes una cuenta?</p>
+        <a href="register.html">
+          <button id="register">Registrate</button>
+        </a>
+      </div>
     </main>
+
+    <script src="main.js"></script>
   </body>
 </html>
