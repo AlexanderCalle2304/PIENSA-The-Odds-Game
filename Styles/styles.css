@@ -6,6 +6,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   gap: 80px;
 }
 
@@ -117,11 +118,13 @@ p {
   gap: 15px;
 }
 #login:hover{
-  color: #003317;
+  background-color: #0D5A2F;
+  color: #10D760;
   cursor: pointer;
 }
 #register:hover{
-  color: #003317;
+  background-color: #0D5A2F;
+  color: #10D760;
   cursor: pointer;
 }
 
