@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Styles/level1.css" />
-    <!-- include the style -->
+    <link rel="stylesheet" href="../Styles/level4.css" />
     <link rel="stylesheet" href="../alertifyjs/css/alertify.min.css" />
     <!-- include a theme -->
     <link rel="stylesheet" href="../alertifyjs/css/themes/default.min.css" />
-    <title>Level 1</title>
+    <title>Level 4</title>
   </head>
   <body>
     <div class="level-header">
       <div class="level-title">
-        <h3>Level 1</h3>
+        <h3>Level 4</h3>
       </div>
       <a href="../level-selector.html">
         <button id="back-btn">Go Back</button>
@@ -32,20 +31,21 @@
         <div class="img"></div>
       </div>
       <p class="problem">
-        ¿Cuál es la probabilidad de obtener cara al lanzar una moneda?
+        ¿Cuál es la probabilidad de obtener dos caras y un sello al lanzar una
+        moneda tres veces?
       </p>
       <section class="answer-wrapper">
-        <button class="answer">1/3</button>
-        <button class="answer" onclick="showFeedback(1)">1/2</button>
-        <button class="answer">2/3</button>
+        <button class="answer" onclick="showFeedback(1)">1/8</button>
+        <button class="answer">1/4</button>
+        <button class="answer">1/16</button>
       </section>
       <div class="feedback">
         <h2>Correcto!</h2>
         <p id="feedtext1" class="feed-descrpt">
-          <b>Respuesta Correcta: 1/2</b><br />
-          En una moneda, hay dos resultados posibles (cara o cruz), por lo que la probabilidad de obtener cara es 1/2.
+          <b>Respuesta Correcta: 1/8</b><br />
+          Hay dos formas de obtener dos caras y un sello (Cara-Cara-Sello,
+          Cara-Sello-Cara), por lo que la probabilidad es 1/8.
         </p>
-        <button class="next-btn" onclick="">Siguiente</button>
       </div>
     </main>
     <main class="level-wrapper" id="problem2">
@@ -61,21 +61,21 @@
         <div class="img"></div>
       </div>
       <p class="problem">
-        ¿Cuál es la probabilidad de obtener un número impar al lanzar un dado de
-        seis caras?
+        Si lanzas un dado y tiras una moneda al mismo tiempo, ¿cuál es la
+        probabilidad de obtener un número par en el dado y cara en la moneda?
       </p>
       <section class="answer-wrapper">
-        <button class="answer" onclick="showFeedback(2)">1/3</button>
-        <button class="answer">1/2</button>
-        <button class="answer">1/6</button>
+        <button class="answer">1/4</button>
+        <button class="answer" onclick="showFeedback(2)">1/6</button>
+        <button class="answer">1/12</button>
       </section>
       <div class="feedback">
         <h2>Correcto!</h2>
         <p id="feedtext2" class="feed-descrpt">
-          <b>Respuesta Correcta: 1/3</b><br />
-          Hay tres números impares (1, 3, 5) en un dado de seis caras, por lo que la probabilidad de obtener un número impar es 1/3.
+          <b>Respuesta Correcta: 1/6</b><br />
+          La probabilidad es el producto de las probabilidades individuales, y
+          hay 3 formas de obtener un número par en el dado y cara en la moneda.
         </p>
-        <button class="next-btn">Siguiente</button>
       </div>
     </main>
 
@@ -92,21 +92,21 @@
         <div class="img"></div>
       </div>
       <p class="problem">
-        ¿Cuál es la probabilidad de obtener un número primo al lanzar un dado de
-        seis caras?
+        ¿Cuál es la probabilidad de obtener tres sellos consecutivos al lanzar
+        una moneda tres veces?
       </p>
       <section class="answer-wrapper">
-        <button class="answer">1/3</button>
-        <button class="answer" onclick="showFeedback(3)">1/2</button>
-        <button class="answer">1/6</button>
+        <button class="answer">1/16</button>
+        <button class="answer">1/12</button>
+        <button class="answer" onclick="showFeedback(3)">1/8</button>
       </section>
       <div class="feedback">
         <h2>Correcto!</h2>
         <p id="feedtext3" class="feed-descrpt">
-          <b>Respuesta Correcta: 1/2</b><br />
-          Los números primos en un dado de seis caras son 2, 3 y 5, por lo que la probabilidad de obtener un número primo es 1/2.
+          <b>Respuesta Correcta: 1/8</b><br />
+          Hay una forma de obtener tres sellos consecutivos (Sello-Sello-Sello),
+          por lo que la probabilidad es 1/8.
         </p>
-        <button class="next-btn">Siguiente</button>
       </div>
     </main>
 
@@ -123,20 +123,21 @@
         <div class="img"></div>
       </div>
       <p class="problem">
-        Si lanzas dos dados, ¿cuál es la probabilidad de obtener una suma de 7?
+        Si seleccionas una carta al azar de un mazo de 52 cartas, ¿cuál es la
+        probabilidad de obtener un as o una carta roja?
       </p>
       <section class="answer-wrapper">
-        <button class="answer">1/3</button>
-        <button class="answer">1/2</button>
-        <button class="answer" onclick="showFeedback(4)">1/6</button>
+        <button class="answer" onclick="showFeedback(4)">1/4</button>
+        <button class="answer">1/8</button>
+        <button class="answer">1/13</button>
       </section>
       <div class="feedback">
         <h2>Correcto!</h2>
         <p id="feedtext4" class="feed-descrpt">
-          <b>Respuesta Correcta: 1/6</b><br />
-          Hay 6 formas diferentes de obtener una suma de 7 al lanzar dos dados.
+          <b>Respuesta Correcta: 1/4</b><br />
+          La mitad de las cartas son rojas, y hay cuatro ases en total, por lo
+          que la probabilidad es 1/2 + 1/13 = 1/4.
         </p>
-        <button class="next-btn">Siguiente</button>
       </div>
     </main>
 
@@ -153,28 +154,30 @@
         <div class="img"></div>
       </div>
       <p class="problem">
-        ¿Cuál es la probabilidad de sacar una carta roja de un mazo estándar de 52 cartas?
+        En una bolsa hay 5 bolas rojas, 4 bolas verdes y 3 bolas azules. Si
+        sacas dos bolas sin reemplazo, ¿cuál es la probabilidad de obtener una
+        bola roja y una bola azul en cualquier orden?
       </p>
       <section class="answer-wrapper">
-        <button class="answer">1/4</button>
-        <button class="answer" onclick="showFeedback(5)">1/2</button>
-        <button class="answer">1/3</button>
+        <button class="answer">5/22</button>
+        <button class="answer" onclick="showFeedback(5)">2/33</button>
+        <button class="answer">3/20</button>
       </section>
       <div class="feedback">
         <h2>Correcto!</h2>
         <p id="feedtext5" class="feed-descrpt">
-          <b>Respuesta Correcta: 1/2</b><br />
-          La mitad de las cartas en un mazo estándar son rojas (corazones y diamantes), por lo que la probabilidad es 1/2.
+          <b>Respuesta Correcta: 2/33</b><br />
+          La probabilidad de obtener una bola roja en el primer intento es 5/12,
+          y la probabilidad de obtener una bola azul en el segundo intento (sin
+          reemplazo) es 3/11. Puedes sumar ambas probabilidades para obtener la
+          respuesta: (5/12) * (3/11) + (3/11) * (5/12) = 30/132 = 2/33.
         </p>
-        <a href="../level-selector.html">
-          <button class="next-btn">Terminar</button>
-        </a>
       </div>
     </main>
     <main class="level-wrapper" id="problem6">
       <h2>
-        ¡Felicidades! <br />
-        Has completado el nivel 1.
+        ¡Felicidades! <br> 
+        Has completado el nivel 4.
       </h2>
       <a href="../level-selector.html">
         <button class="next-btn">Terminar</button>

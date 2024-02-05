@@ -1,6 +1,5 @@
 const form = document.querySelector("#form");
 
-
 form.addEventListener("submit", function (event) {
   if (event.submitter && event.submitter.id === "login") {
     event.preventDefault();

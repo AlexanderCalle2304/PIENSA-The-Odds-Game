@@ -9,12 +9,12 @@
   <body>
     <main>
       <header class="main-header">
-          <h3>The Odds Game</h3>
-          <button id="sett-btn">Progreso</button>
+        <h3>The Odds Game</h3>
+        <button id="sett-btn">Progreso</button>
       </header>
       <section class="level-wrapper">
         <div class="level-selector">
-          <div class="level-prev">
+          <div class="level-prev" id="level-prev1">
             <div class="prev"></div>
             <div class="prev"></div>
             <div class="prev"></div>
@@ -34,7 +34,7 @@
         </div>
         <hr />
         <div class="level-selector">
-          <div class="level-prev"> 
+          <div class="level-prev" id="level-prev2">
             <div class="prev"></div>
             <div class="prev"></div>
             <div class="prev"></div>
@@ -54,7 +54,7 @@
         </div>
         <hr />
         <div class="level-selector">
-          <div class="level-prev">
+          <div class="level-prev" id="level-prev3">
             <div class="prev"></div>
             <div class="prev"></div>
             <div class="prev"></div>
@@ -68,11 +68,13 @@
           <div class="level-title">
             <h3 class="level-num">Level 3</h3>
           </div>
-          <button class="play">Play</button>
+          <a href="Levels/level03.html">
+            <button class="play">Play</button>
+          </a>
         </div>
         <hr />
         <div class="level-selector">
-          <div class="level-prev">
+          <div class="level-prev" id="level-prev4">
             <div class="prev"></div>
             <div class="prev"></div>
             <div class="prev"></div>
@@ -86,9 +88,12 @@
           <div class="level-title">
             <h3 class="level-num">Level 4</h3>
           </div>
-          <button class="play">Play</button>
+          <a href="Levels/level04.html">
+            <button class="play">Play</button>
+          </a>
         </div>
       </section>
     </main>
+    <script src="Scripts/level-selector.js"></script>
   </body>
 </html>

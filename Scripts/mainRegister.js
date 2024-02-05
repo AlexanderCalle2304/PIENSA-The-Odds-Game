@@ -8,6 +8,7 @@ formregister.addEventListener("submit", function (event) {
   }
 });
 
+//Validación de formulario de registro
 function validateFormRegister() {
   const nameRegister = document.querySelector("#user");
   const passwordRegister = document.querySelector("#password");
@@ -22,6 +23,8 @@ function validateFormRegister() {
 
   return true;
 }
+
+//Validacion de formulario de registro y redireccionamiento
 function validateAndRedirectRegister() {
   if(validateFormRegister() === true){
     const redirectUrlRegister = "level-selector.html";

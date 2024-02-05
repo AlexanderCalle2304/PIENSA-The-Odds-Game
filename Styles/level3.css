@@ -5,6 +5,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .level-title{
@@ -49,11 +50,12 @@ body{
   width: 320px;
   background-color: #D8FFE7;
   margin-top: 20px;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 10px 20px 10px;
+  height: 100vh;
 }
 
 .level-img{
@@ -63,14 +65,20 @@ body{
   background-color: #fff;
   height: 300px;
   width: 300px;
+  margin: 0 auto;
 }
 
 .img{
   height: 100%;
   width: 100%;
+  transition: background-color 0.5s ease;
 }
 .img:nth-child(odd){
-  background-color: #10D760;
+  background-color: #CC1FBB;
+}
+
+.img.color-change{
+  background-color: #CC1FBB;
 }
 
 .problem{
@@ -106,3 +114,42 @@ body{
   color: #10D760;
   cursor: pointer;
 }
+
+.current-problem{
+  display: block;
+}
+.feedback{
+  display: none;
+}
+
+.next-btn{
+  width: 180px;
+  height: 45px;
+  background-color: #10d760;
+  border: none;
+  border-radius: 25px;
+  color: #0d5a2f;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: JetBrains Mono, sans-serif;
+  font-weight: bold;
+}
+
+.next-btn:hover{
+  background-color: #0d5a2f;
+  color: #10d760;
+  cursor: pointer;
+}
+
+#problem6{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  gap: 10px;
+  height: 300px;
+}
+
+
+
+

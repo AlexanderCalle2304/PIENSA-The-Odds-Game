@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styles/level2.css" />
+    <link rel="stylesheet" href="../alertifyjs/css/alertify.min.css" />
+    <!-- include a theme -->
+    <link rel="stylesheet" href="../alertifyjs/css/themes/default.min.css" />
+    <title>Level 2</title>
+  </head>
+  <body>
+    <div class="level-header">
+      <div class="level-title">
+        <h3>Level 2</h3>
+      </div>
+      <a href="../level-selector.html">
+        <button id="back-btn">Go Back</button>
+      </a>
+    </div>
+    <main class="level-wrapper current-problem" id="problem1">
+      <div class="level-img" id="level-prev2">
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+      </div>
+      <p class="problem">
+        Si lanzas una moneda tres veces, ¿cuál es la probabilidad de obtener al
+        menos dos sellos?
+      </p>
+      <section class="answer-wrapper">
+        <button class="answer">1/8</button>
+        <button class="answer" onclick="showFeedback(1)">1/4</button>
+        <button class="answer">3/8</button>
+      </section>
+      <div class="feedback">
+        <h2>Correcto!</h2>
+        <p id="feedtext1" class="feed-descrpt">
+          <b>Respuesta Correcta: 1/4</b><br />
+          Hay tres resultados posibles con al menos dos sellos (S-S-S, S-S-A,
+          A-S-S), por lo que la probabilidad es 1/4.
+        </p>
+      </div>
+    </main>
+    <main class="level-wrapper" id="problem2">
+      <div class="level-img" id="level-prev2">
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+      </div>
+      <p class="problem">
+        ¿Cuál es la probabilidad de obtener dos números pares al lanzar dos
+        dados?
+      </p>
+      <section class="answer-wrapper">
+        <button class="answer">1/4</button>
+        <button class="answer" onclick="showFeedback(2)">1/9</button>
+        <button class="answer">1/6</button>
+      </section>
+      <div class="feedback">
+        <h2>Correcto!</h2>
+        <p id="feedtext2" class="feed-descrpt">
+          <b>Respuesta Correcta: 1/9</b><br />
+          Solo hay una combinación (2, 4) para obtener dos números pares al
+          lanzar dos dados.
+        </p>
+      </div>
+    </main>
+
+    <main class="level-wrapper" id="problem3">
+      <div class="level-img" id="level-prev2">
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+      </div>
+      <p class="problem">
+        ¿Cuál es la probabilidad de obtener una suma de 10 al lanzar dos dados?
+      </p>
+      <section class="answer-wrapper">
+        <button class="answer">1/36</button>
+        <button class="answer" onclick="showFeedback(3)">1/12</button>
+        <button class="answer">1/8</button>
+      </section>
+      <div class="feedback">
+        <h2>Correcto!</h2>
+        <p id="feedtext3" class="feed-descrpt">
+          <b>Respuesta Correcta: 1/12</b><br />
+          Hay 3 formas diferentes de obtener una suma de 10 al lanzar dos dados.
+        </p>
+      </div>
+    </main>
+
+    <main class="level-wrapper" id="problem4">
+      <div class="level-img" id="level-prev2">
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+      </div>
+      <p class="problem">
+        Si seleccionas aleatoriamente una carta de un mazo, ¿cuál es la
+        probabilidad de seleccionar un as?
+      </p>
+      <section class="answer-wrapper">
+        <button class="answer">1/4</button>
+        <button class="answer">1/8</button>
+        <button class="answer" onclick="showFeedback(4)">1/13</button>
+      </section>
+      <div class="feedback">
+        <h2>Correcto!</h2>
+        <p id="feedtext4" class="feed-descrpt">
+          <b>Respuesta Correcta: 1/13</b><br />
+          Hay 4 ases en un mazo de 52 cartas, por lo que la probabilidad es
+          1/13.
+        </p>
+      </div>
+    </main>
+
+    <main class="level-wrapper" id="problem5">
+      <div class="level-img" id="level-prev2">
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+      </div>
+      <p class="problem">
+        ¿Cuál es la probabilidad de obtener dos caras consecutivas al lanzar una
+        moneda dos veces?
+      </p>
+      <section class="answer-wrapper">
+        <button class="answer">1/4</button>
+        <button class="answer" onclick="showFeedback(5)">1/2</button>
+        <button class="answer">1/3</button>
+      </section>
+      <div class="feedback">
+        <h2>Correcto!</h2>
+        <p id="feedtext5" class="feed-descrpt">
+          <b>Respuesta Correcta: 1/2</b><br />
+          Hay dos formas de obtener dos caras consecutivas (Cara-Cara), por lo
+          que la probabilidad es 1/2.
+        </p>
+      </div>
+    </main>
+    <main class="level-wrapper" id="problem6">
+      <h2>
+        ¡Felicidades! <br />
+        Has completado el nivel 2.
+      </h2>
+      <a href="../level-selector.html">
+        <button class="next-btn">Terminar</button>
+      </a>
+    </main>
+    <script src="../Scripts/levels.js"></script>
+    <script src="../alertifyjs/alertify.min.js"></script>
+
+  </body>
+</html>

@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Styles/level1.css" />
-    <!-- include the style -->
+    <link rel="stylesheet" href="../Styles/level3.css" />
     <link rel="stylesheet" href="../alertifyjs/css/alertify.min.css" />
     <!-- include a theme -->
     <link rel="stylesheet" href="../alertifyjs/css/themes/default.min.css" />
-    <title>Level 1</title>
+    <title>Level 3</title>
   </head>
   <body>
     <div class="level-header">
       <div class="level-title">
-        <h3>Level 1</h3>
+        <h3>Level 3</h3>
       </div>
       <a href="../level-selector.html">
         <button id="back-btn">Go Back</button>
@@ -32,20 +31,21 @@
         <div class="img"></div>
       </div>
       <p class="problem">
-        ¿Cuál es la probabilidad de obtener cara al lanzar una moneda?
+        ¿Cuál es la probabilidad de obtener un número par al lanzar un dado de
+        ocho caras?
       </p>
       <section class="answer-wrapper">
         <button class="answer">1/3</button>
         <button class="answer" onclick="showFeedback(1)">1/2</button>
-        <button class="answer">2/3</button>
+        <button class="answer">3/8</button>
       </section>
       <div class="feedback">
         <h2>Correcto!</h2>
         <p id="feedtext1" class="feed-descrpt">
           <b>Respuesta Correcta: 1/2</b><br />
-          En una moneda, hay dos resultados posibles (cara o cruz), por lo que la probabilidad de obtener cara es 1/2.
+          En un dado de ocho caras, hay cuatro números pares, por lo que la
+          probabilidad es 1/2.
         </p>
-        <button class="next-btn" onclick="">Siguiente</button>
       </div>
     </main>
     <main class="level-wrapper" id="problem2">
@@ -61,21 +61,21 @@
         <div class="img"></div>
       </div>
       <p class="problem">
-        ¿Cuál es la probabilidad de obtener un número impar al lanzar un dado de
-        seis caras?
+        Si seleccionas una carta al azar de un mazo, ¿cuál es la probabilidad de
+        seleccionar una carta roja o una carta con un número impar?
       </p>
       <section class="answer-wrapper">
-        <button class="answer" onclick="showFeedback(2)">1/3</button>
-        <button class="answer">1/2</button>
-        <button class="answer">1/6</button>
+        <button class="answer">1/4</button>
+        <button class="answer">1/9</button>
+        <button class="answer" onclick="showFeedback(2)">3/4</button>
       </section>
       <div class="feedback">
         <h2>Correcto!</h2>
         <p id="feedtext2" class="feed-descrpt">
-          <b>Respuesta Correcta: 1/3</b><br />
-          Hay tres números impares (1, 3, 5) en un dado de seis caras, por lo que la probabilidad de obtener un número impar es 1/3.
+          <b>Respuesta Correcta: 3/4</b><br />
+          La mitad de las cartas son rojas, y la mitad de las cartas tienen
+          números impares, por lo que la probabilidad total es 3/4.
         </p>
-        <button class="next-btn">Siguiente</button>
       </div>
     </main>
 
@@ -92,21 +92,21 @@
         <div class="img"></div>
       </div>
       <p class="problem">
-        ¿Cuál es la probabilidad de obtener un número primo al lanzar un dado de
-        seis caras?
+        ¿Cuál es la probabilidad de obtener dos sellos consecutivos al lanzar
+        dos monedas?
       </p>
       <section class="answer-wrapper">
-        <button class="answer">1/3</button>
-        <button class="answer" onclick="showFeedback(3)">1/2</button>
-        <button class="answer">1/6</button>
+        <button class="answer">1/8</button>
+        <button class="answer" onclick="showFeedback(3)">1/4</button>
+        <button class="answer">1/2</button>
       </section>
       <div class="feedback">
         <h2>Correcto!</h2>
         <p id="feedtext3" class="feed-descrpt">
-          <b>Respuesta Correcta: 1/2</b><br />
-          Los números primos en un dado de seis caras son 2, 3 y 5, por lo que la probabilidad de obtener un número primo es 1/2.
+          <b>Respuesta Correcta: 1/4</b><br />
+          Hay dos formas de obtener dos sellos consecutivos (Sello-Sello), por
+          lo que la probabilidad es 1/4.
         </p>
-        <button class="next-btn">Siguiente</button>
       </div>
     </main>
 
@@ -123,20 +123,21 @@
         <div class="img"></div>
       </div>
       <p class="problem">
-        Si lanzas dos dados, ¿cuál es la probabilidad de obtener una suma de 7?
+        ¿Cuál es la probabilidad de obtener un número mayor a 4 al lanzar un
+        dado de seis caras?
       </p>
       <section class="answer-wrapper">
-        <button class="answer">1/3</button>
         <button class="answer">1/2</button>
-        <button class="answer" onclick="showFeedback(4)">1/6</button>
+        <button class="answer" onclick="showFeedback(4)">1/3</button>
+        <button class="answer">1/6</button>
       </section>
       <div class="feedback">
         <h2>Correcto!</h2>
         <p id="feedtext4" class="feed-descrpt">
-          <b>Respuesta Correcta: 1/6</b><br />
-          Hay 6 formas diferentes de obtener una suma de 7 al lanzar dos dados.
+          <b>Respuesta Correcta: 1/3</b><br />
+          Hay dos números mayores a 4 (5 y 6) en un dado de seis caras, por lo
+          que la probabilidad es 1/3.
         </p>
-        <button class="next-btn">Siguiente</button>
       </div>
     </main>
 
@@ -153,28 +154,27 @@
         <div class="img"></div>
       </div>
       <p class="problem">
-        ¿Cuál es la probabilidad de sacar una carta roja de un mazo estándar de 52 cartas?
+        ¿Cuál es la probabilidad de obtener al menos un número primo al lanzar
+        un dado de diez caras?
       </p>
       <section class="answer-wrapper">
-        <button class="answer">1/4</button>
-        <button class="answer" onclick="showFeedback(5)">1/2</button>
-        <button class="answer">1/3</button>
+        <button class="answer">1/2</button>
+        <button class="answer" onclick="showFeedback(5)">3/5</button>
+        <button class="answer">1/10</button>
       </section>
       <div class="feedback">
         <h2>Correcto!</h2>
         <p id="feedtext5" class="feed-descrpt">
-          <b>Respuesta Correcta: 1/2</b><br />
-          La mitad de las cartas en un mazo estándar son rojas (corazones y diamantes), por lo que la probabilidad es 1/2.
+          <b>Respuesta Correcta: 3/5</b><br />
+          Hay seis números primos (2, 3, 5, 7, 11) en un dado de diez caras, por
+          lo que la probabilidad es 3/5.
         </p>
-        <a href="../level-selector.html">
-          <button class="next-btn">Terminar</button>
-        </a>
       </div>
     </main>
     <main class="level-wrapper" id="problem6">
       <h2>
-        ¡Felicidades! <br />
-        Has completado el nivel 1.
+        ¡Felicidades! <br/>
+        Has completado el nivel 3.
       </h2>
       <a href="../level-selector.html">
         <button class="next-btn">Terminar</button>

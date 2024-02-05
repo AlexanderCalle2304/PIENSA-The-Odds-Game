@@ -94,6 +94,19 @@ body {
   width: 100%;
   height: 100%;
 }
-.prev:nth-child(odd){
+#level-prev1 .prev:nth-child(odd){
   background-color:#003317;
 }
+
+#level-prev2 .prev:nth-child(even){
+  background-color: #5A0D37;
+}
+
+#level-prev3 .prev:nth-child(odd){
+  background-color: #CC1FBB;
+}
+
+#level-prev4 .prev:nth-child(even){
+  background-color: #F41E51;
+}
+
