@@ -37,6 +37,11 @@ main{
   font-weight: bold;
 }
 
+#back-btn:hover{
+  background-color: #0d5a2f;
+  color: #10d760;
+  cursor: pointer;
+}
 .progres-title{
   width: 180px;
 }

@@ -16,6 +16,8 @@ body {
   width: 360px;
   height: 100px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #sett-btn {
